@@ -145,8 +145,8 @@ if cwd == '/app' or cwd [:4] == '/tmp':
     SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED-PROTO', 'https')
 
     # Only allow heroku to host the project.
-    ALLOWED_HOSTS = ['*']
-    DEBUG = True
+    ALLOWED_HOSTS = ['milotte-learning-log.herokuapp.com']
+    DEBUG = False
 
     # Static assest configuration
     BASE_DIR = os.path.dirname(os.path.abspath(__file__))
